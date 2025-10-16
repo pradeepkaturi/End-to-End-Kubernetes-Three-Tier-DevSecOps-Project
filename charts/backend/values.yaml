@@ -21,8 +21,8 @@ readinessProbe:
   httpGet:
     path: /ready
     port: 3500
-  initialDelaySeconds: 5
-  periodSeconds: 5
+  initialDelaySeconds: 30
+  periodSeconds: 10
 
 livenessProbe:
   httpGet:
