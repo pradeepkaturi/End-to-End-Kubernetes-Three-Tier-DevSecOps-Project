@@ -107,7 +107,7 @@ jobs:
       - name: Tag and push image to Docker Hub
         run: |
           IMAGE=backend:${{ env.IMAGE_TAG }}
-          REPO=pradeepkaturi/practice
+          REPO=pradeepkaturi/backend
           docker tag "$IMAGE" "$REPO:${{ env.IMAGE_TAG }}"
           docker tag "$IMAGE" "$REPO:latest"
           docker push "$REPO:${{ env.IMAGE_TAG }}"
